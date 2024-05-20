@@ -1,0 +1,5 @@
+roverNavigator:
+    resource:
+        path: ../src/External/Presentation/RoverNavigator/Controller/
+        namespace: App\External\Presentation\RoverNavigator\Controller
+    type: attribute
