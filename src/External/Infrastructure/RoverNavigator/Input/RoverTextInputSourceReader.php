@@ -6,7 +6,7 @@ namespace App\External\Infrastructure\RoverNavigator\Input;
 
 use App\External\Presentation\RoverNavigator\Input\RoverInputSourceReaderInterface;
 use App\Shared\Application\Service\ContainerParametersServiceInterface;
-use App\Shared\Domain\Exception\InputSourceNotFoundException;
+use App\Shared\Presentation\Exception\InputSourceNotFoundException;
 
 final readonly class RoverTextInputSourceReader implements RoverInputSourceReaderInterface
 {

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Core\Domain\Orientation\Exception;
 
-use Exception;
+use DomainException;
 
-final class InvalidOrientationException extends Exception
+final class InvalidOrientationException extends DomainException
 {
 
 }

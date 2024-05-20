@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\External\Presentation\RoverNavigator\Input;
 
 use App\Core\Application\RoverNavigator\DTO\RoverNavigatorInput;
-use App\Shared\Domain\Exception\InvalidInputException;
+use App\Shared\Presentation\Exception\InvalidInputException;
 
 interface RoverInputParserInterface
 {

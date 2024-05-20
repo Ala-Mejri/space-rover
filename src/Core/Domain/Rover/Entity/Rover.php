@@ -19,29 +19,19 @@ final class Rover
         return $this->orientation;
     }
 
-    public function setOrientation(OrientationInterface $orientation): void
-    {
-        $this->orientation = $orientation;
-    }
-
     public function getCoordinate(): Coordinate
     {
         return $this->coordinate;
     }
 
-    public function setCoordinate(Coordinate $coordinate): void
-    {
-        $this->coordinate = $coordinate;
-    }
-
     public function turnLeft(): void
     {
-        $this->setOrientation($this->getOrientation()->left());
+        $this->orientation = $this->getOrientation()->left();
     }
 
     public function turnRight(): void
     {
-        $this->setOrientation($this->getOrientation()->right());
+        $this->orientation = $this->getOrientation()->right();
     }
 
     public function moveForward(Plateau $plateau): void
@@ -54,7 +44,7 @@ final class Rover
         $y = $this->getCoordinate()->getY() + $newCoordinate->getY();
         $y = $this->normalizeYCoordinate($plateau, $y);
 
-        $this->setCoordinate(new Coordinate($x, $y));
+        $this->coordinate = new Coordinate($x, $y);
     }
 
     private function normalizeXCoordinate(Plateau $plateau, int $x): int

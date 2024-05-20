@@ -8,7 +8,7 @@ use App\Core\Application\RoverNavigator\DTO\RoverNavigator;
 use App\Core\Application\RoverNavigator\DTO\RoverNavigatorCollection;
 use App\Core\Application\RoverNavigator\DTO\RoverNavigatorInput;
 use App\External\Presentation\RoverNavigator\Input\RoverInputParserInterface;
-use App\Shared\Domain\Exception\InvalidInputException;
+use App\Shared\Presentation\Exception\InvalidInputException;
 
 final class RoverTextInputParser implements RoverInputParserInterface
 {

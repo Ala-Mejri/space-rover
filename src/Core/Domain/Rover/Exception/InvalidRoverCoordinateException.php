@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Core\Domain\Rover\Exception;
 
-use Exception;
+use DomainException;
 
-final class InvalidRoverCoordinateException extends Exception
+final class InvalidRoverCoordinateException extends DomainException
 {
 
 }
