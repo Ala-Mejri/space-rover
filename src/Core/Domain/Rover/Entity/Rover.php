@@ -34,12 +34,12 @@ final class Rover
         $this->coordinate = $coordinate;
     }
 
-    public function moveLeft(): void
+    public function turnLeft(): void
     {
         $this->setOrientation($this->getOrientation()->left());
     }
 
-    public function moveRight(): void
+    public function turnRight(): void
     {
         $this->setOrientation($this->getOrientation()->right());
     }

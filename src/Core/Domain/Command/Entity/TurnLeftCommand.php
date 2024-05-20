@@ -11,6 +11,6 @@ final class TurnLeftCommand implements CommandInterface
 {
     public function execute(Plateau $plateau, Rover $rover): void
     {
-        $rover->moveLeft();
+        $rover->turnLeft();
     }
 }

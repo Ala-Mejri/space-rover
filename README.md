@@ -69,7 +69,7 @@ To check how the application handles these scenarios, please test the following 
 #### V.4. Database
 - No database usage was requested for this simple task; however, when the application grows, it will make sense to use one.
 #### V.4. DDD
-- Currently, all our models are defined as entities; however, we can introduce aggregate roots and value objects as well.
+- Currently, all our models are defined as entities; however, we can introduce some DDD concepts like aggregate roots and value objects as well.
 
 ### VI. Feedback
 I will be looking forward to your feedback!
